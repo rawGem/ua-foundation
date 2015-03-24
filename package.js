@@ -1,7 +1,7 @@
 Package.describe({
     summary: "Accounts Templates styled for Zurb Foundation.",
     version: "1.8.1",
-    name: "useraccounts:foundation",
+    name: "rwgm-ua:foundation",
     git: "https://github.com/meteor-useraccounts/foundation.git",
 });
 
@@ -14,11 +14,11 @@ Package.on_use(function(api, where) {
     ], "client");
 
     api.use([
-        "useraccounts:core",
+        "rwgm:core",
     ], ["client", "server"]);
 
     api.imply([
-        "useraccounts:core@1.8.1",
+        "rwgm:core@1.8.1",
     ], ["client", "server"]);
 
     api.add_files([
@@ -61,8 +61,8 @@ Package.on_use(function(api, where) {
 
 Package.on_test(function(api) {
     api.use([
-        "useraccounts:foundation",
-        "useraccounts:core@1.8.1",
+        "rwgm-ua:foundation",
+        "rwgm:core@1.8.1",
     ]);
 
     api.use([
